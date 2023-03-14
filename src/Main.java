@@ -71,6 +71,28 @@ public class Main {
             System.out.println((i + 1) + ": " + list.get(i));
         }
     }
+
+    private static String getString() {
+        Scanner scannerS = new Scanner(System.in);
+        String enteredData = scannerS.nextLine();
+        return enteredData;
+    }
+
+    private static void extracted() {
+        System.out.println("------------------------------");
+        System.out.println("Выберите операцию:");
+        System.out.println("1 - Добавить продукт в список.");
+        System.out.println("2 - Показать список.");
+        System.out.println("3 - Удалить продукт из списка.");
+        System.out.println("4 - Поиск по списку.");
+    }
+
+    private static void extracted(List<String> list) {
+        System.out.println("------------------------------");
+        for (int i = 0; i < list.size(); i++){
+            System.out.println((i + 1) + ": " + list.get(i));
+        }
+    }
 }
 
 
